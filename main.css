@@ -1,47 +1,40 @@
-body{
+body {
     background-color: #f3eae3;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
     padding-top: 150px;
-
 }
-.container{
-    height: 750px;
-        border-top-right-radius: 20px;;
-    border-bottom-right-radius: 20px;;
 
+.container {
+    height: 750px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     justify-content: space-between;
     width: 600px;
     background-color: hsl(0, 0%, 100%);
 }
 
-.ok{
-
+.ok {
     width: 500px;
-
-
-
-    padding-top: 150px;
-    border-top-left-radius: 20px;;
-    border-bottom-left-radius: 20px;;
     padding: 0px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     display: flex;
 }
 
-    .perf{
-        font-family: "Montserrat";
-        color: hsla(228, 12%, 48%, 0.719);
-        font-size: 30px;
-        display: flex;
-        padding: 10px;
-        padding-left: 30px;
-        font-weight:400 ;
-        
-    }
-.maca{
+.perf {
+    font-family: "Montserrat";
+    color: hsla(228, 12%, 48%, 0.719);
+    font-size: 30px;
+    display: flex;
+    padding: 10px;
+    padding-left: 30px;
+    font-weight: 400;
+}
 
+.maca {
     color: hsl(212, 21%, 14%);
     display: flex;
     font-family: "Playfair Display";
@@ -49,21 +42,21 @@ body{
     font-size: 40px;
     padding-left: 20px;
 }
-.card{
+
+.card {
     padding-top: 20px;
     font-size: 20px;
     color: hsla(228, 12%, 48%, 0.719);
     font-family: "Montserrat";
     font-weight: 400;
-    
-
 }
 
-.num{
-        font-family: "Playfair Display";
-        font-size: 50px;
-        color: hsl(158, 36%, 37%);
+.num {
+    font-family: "Playfair Display";
+    font-size: 50px;
+    color: hsl(158, 36%, 37%);
 }
+
 .riscado {
     text-decoration: line-through;
     font-family: "Playfair Display";
@@ -73,70 +66,71 @@ body{
     font-size: 24px;
     position: absolute;
     top: 585px;
-
 }
 
-button{
+button {
     text-decoration: none;
     background-color: hsl(158, 36%, 37%);
     border: 0;
     width: 55%;
     height: 10%;
-    font-size: 20px;  
+    font-size: 20px;
     font-family: "Montserrat";
-    color: aliceblue;  
+    color: aliceblue;
     font-weight: 800;
     border-radius: 10px;
-
-
 }
-.mob{
+
+.mob {
     display: none;
 }
 
-.bi.bi-cart{
+.bi.bi-cart {
     position: relative;
     right: 305px;
     color: white;
     font-size: 24px;
     font-weight: 40px;
 }
-    button:hover{
-        background-color: hsl(158, 37%, 29%) ;
-    }
 
-@media (max-width: 980px) {
+button:hover {
+    background-color: hsl(158, 37%, 29%);
+}
 
-    body{
+@media (max-width: 1100px) {
+    body {
         padding: 0;
         flex-direction: column;
     }
-    .mob{
+    .mob {
         display: flex;
-        width: 600px;
-        ;
-
-
-    
+        width: 700px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
     }
-.perf{
-    padding-left: 60px;
+    .perf {
+        padding-left: 60px;
+    }
+    .ok {
+        display: none;
+    }
+    .container {
+        width: 700px;
+        border-top-right-radius: 0px !important;
+        border-top-left-radius: 0px !important;
+        border-radius: 20px;
+    }
+    .riscado {
+        display: none;
+    }
 }
 
-
-.ok{
-    display: none;
+@media (max-width: 980px) {
+    .mob {
+        width: 470px;
+    }
+    .container {
+        width: 470px;
+        border-top-right-radius: 0px;
+    }
 }
-.container{
-
-        border-top-right-radius: 0px;;
-
-
-}
-.riscado{
-    display: none;
-}
-
-}
-
-
