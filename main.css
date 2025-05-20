@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-    height: 750px;
+    height: 450px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     justify-content: space-between;
@@ -16,121 +16,121 @@ body {
     background-color: hsl(0, 0%, 100%);
 }
 
-.ok {
-    width: 500px;
+.img-principal {
+    width: 300px;
     padding: 0px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     display: flex;
 }
 
-.perf {
+.perfume {
     font-family: "Montserrat";
     color: hsla(228, 12%, 48%, 0.719);
-    font-size: 30px;
+    font-size: 20px;
     display: flex;
-    padding: 10px;
+    padding: 0px;
     padding-left: 30px;
     font-weight: 400;
 }
 
-.maca {
-    color: hsl(212, 21%, 14%);
-    display: flex;
-    font-family: "Playfair Display";
-    font-weight: 1000;
-    font-size: 40px;
-    padding-left: 20px;
-}
 
 .card {
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 20px;
     color: hsla(228, 12%, 48%, 0.719);
     font-family: "Montserrat";
-    font-weight: 400;
+    font-weight: 300;
 }
 
-.num {
-    font-family: "Playfair Display";
-    font-size: 50px;
-    color: hsl(158, 36%, 37%);
-}
 
-.riscado {
-    text-decoration: line-through;
-    font-family: "Playfair Display";
-    color: hsla(211, 36%, 18%, 0.582);
-    display: flex;
-    padding-left: 400px;
-    font-size: 24px;
-    position: absolute;
-    top: 585px;
-}
 
 button {
     text-decoration: none;
     background-color: hsl(158, 36%, 37%);
     border: 0;
     width: 55%;
-    height: 10%;
-    font-size: 20px;
+    font-size: 14px;
     font-family: "Montserrat";
     color: aliceblue;
     font-weight: 800;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    height: 50px;
+    
 }
 
-.mob {
+.img-secundaria {
     display: none;
 }
 
 .bi.bi-cart {
-    position: relative;
-    right: 305px;
+    display: flex;
+    
     color: white;
     font-size: 24px;
-    font-weight: 40px;
+
 }
 
 button:hover {
     background-color: hsl(158, 37%, 29%);
 }
 
-@media (max-width: 1100px) {
-    body {
-        padding: 0;
-        flex-direction: column;
-    }
-    .mob {
-        display: flex;
-        width: 700px;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-    }
-    .perf {
-        padding-left: 60px;
-    }
-    .ok {
-        display: none;
-    }
-    .container {
-        width: 700px;
-        border-top-right-radius: 0px !important;
-        border-top-left-radius: 0px !important;
-        border-radius: 20px;
-    }
-    .riscado {
-        display: none;
-    }
+
+.comprar{
+    height: 70vh;
+}
+.preco-card{
+    
+    font-size: 30px;
+    font-weight: 600;
+    color: hsl(158, 37%, 29%);;
+}
+.preco-card span{
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: line-through;
+    color: rgb(102, 97, 97);
 }
 
-@media (max-width: 980px) {
-    .mob {
-        width: 470px;
-    }
-    .container {
-        width: 470px;
-        border-top-right-radius: 0px;
-    }
+.texto-central{
+    font-size: 30px;
+    font-weight: 600;
+}
+@media(max-width: 1000px) {
+
+.img-secundaria {
+    top: 160px;
+    left: 20%;
+    position: absolute;
+    display: block;
+    width: 65%;
+}
+.card{
+    font-size: 15px;
+}
+
+.img-principal{
+    display: none;
+}
+.container{
+    padding-top: 40%;
+    width: 95%;
+    
+}
+.bi.bi-cart{
+    font-size: 15px;
+}
+button{
+    font-size: 10px;
+    height: 40px;
+}
+}
+.container-produtos{
+    position: relative;
+    left: 20%;
+    
 }
